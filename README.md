@@ -20,4 +20,8 @@ Graphs can help us identify potential communities in a social network.
 **Assignment:**
 Find communities in a network graph given a network of 7,624 nodes and 27,806 edges. Group them together using one sigle repeating rule
 
-[`com_detec.ipynb`](https://github.com/angelesmarinbatana/hw1/blob/main/com_detec.ipynb) contains an algorithm for finding communities in networks. You keep picking whatever community most of your friends are in. At the end, friend clusters all pick the same group and those become communities. 
+[`com_detec.ipynb`](https://github.com/angelesmarinbatana/hw1/blob/main/com_detec.ipynb) contains an algorithm for finding communities in networks. You keep picking whatever community most of your friends are in. At the end, friend clusters all pick the same group and those become communities. I did this by
+* visiting each node in a random order
+* scoring each neighbors' current community.
+* rank and select the highes
+* repeat until you dont have any nodes left.
